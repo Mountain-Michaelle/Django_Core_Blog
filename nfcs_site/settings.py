@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1']
 
+SITE_ID = 1
 
 # Application definition
 
@@ -42,6 +43,8 @@ INSTALLED_APPS = [
     'blog',
     'django_browser_reload',
     'taggit',
+    'django.contrib.sites',
+    'django.contrib.sitemaps',
 ]
 
 MIDDLEWARE = [
