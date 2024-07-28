@@ -1,0 +1,32 @@
+{% extends 'blog/base.html' %}
+
+
+{% block content %}
+
+<div class='search_form'>
+    <form method='get'>
+        {{search_form.as_div}}
+        <button type='submit' >search</button>
+    </form>
+
+    <div class='results'>
+        {% if query %}
+            <h1>Post containing <i> {{ query }} </i> </h1>
+
+            <h3>
+                {% with results.count as total_results %}
+                    Found {{ total_results }} result{{total_results|pluralize}}
+                {% endwith %}
+            </h3>
+
+            {% for post in results %}
+                <h4>
+                    <a href="{{ post.get_absolute_url }}">
+                        {{post.title}}
+                    </a>
+                </h4>
+            {% endfor %}
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

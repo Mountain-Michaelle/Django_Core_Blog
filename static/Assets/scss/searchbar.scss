@@ -22,6 +22,16 @@
         display: flex;
         justify-content: flex-end;
 
+        p{
+            font-weight: 800;
+            color: white;
+
+            a{
+                color: blue;
+                padding: 2px;
+            }
+        }
+
         .search-input{
             background: white;
             padding: 5px;
@@ -60,7 +70,7 @@
 
         .search-right{
             width: 100%;
-            justify-content: flex-start;
+            justify-content: flex-start !important;
             transition: all 0.5s ease;
 
             .search-input{
@@ -91,7 +101,7 @@
         
         .search-right{
             width: 100%;
-            justify-content: flex-start;
+            justify-content: flex-end;
             transition: all 0.5s ease;
 
             .search-input{

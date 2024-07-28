@@ -15,13 +15,17 @@
     <link rel='stylesheet' href="{% sass_src 'Assets/scss/list.scss' %}" />
     <link rel='stylesheet' href="{% sass_src 'Assets/scss/share.scss' %}" />
     <link rel='stylesheet' href="{% sass_src 'Assets/scss/base.scss' %}" />
+    <link rel='stylesheet' href="{% sass_src 'Assets/scss/searchform.scss' %}" />
 
     {% block title %} {% endblock %}
     <title>nfcs-st-augustine-chaplaincy-imt</title>
 </head>
 <body>
     {% include "blog/partials/navbar.html" %}
+    {% include "blog/post/search.html" %}
+
     <div class='blogs'>
+        
         <div class='content'>
         {% block content %}
         {% endblock content %}   

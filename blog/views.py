@@ -2,10 +2,12 @@ from django.shortcuts import render, get_object_or_404
 from .models import Post, Comment
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.views.generic import ListView
-from .forms import EmailPostForm, CommentForm
+from .forms import EmailPostForm, CommentForm, SearchForm
 from django.core.mail import send_mail
 from taggit.models import Tag
 from django.db.models import Count
+from django.contrib.postgres.search import SearchVector, SearchQuery, SearchRank
+from django.contrib.postgres.search import TrigramSimilarity
 # Create your views here.
 
 
@@ -108,16 +110,25 @@ def post_comment(request, post_id):
             
     context = {'form': form, 'post': post, 'comment': comment}
     return render(request, 'blog/post/comment.html', context)
-        
 
 
-
-
-
-
-
-
-
+def post_search(request):
+    search_form = SearchForm()
+    query = None
+    results = []
+    
+    if 'query' in request.GET:
+        search_form = SearchForm(request.GET)
+        if search_form.is_valid():
+            query = search_form.cleaned_data['query']
+            search_vector =  SearchVector('title', weight='A') + SearchVector('body', weight='B') 
+            search_query = SearchQuery(query, config='spanish')
+            
+            # results = Post.published.annotate(similarity=TrigramSimilarity('title', query),
+            #                                 ).filter(similarity__gt=0.1).order_by('-similarity')\
+            results = Post.published.annotate(search=search_vector, rank=SearchRank(search_vector, search_query)).filter(rank__gt=0.3).order_by('-rank')
+    context = {'search_form':search_form, 'query':query, 'results':results}
+    return render(request, 'blog/post/blog_search.html', context)
 
 
 # class PostListView(ListView):

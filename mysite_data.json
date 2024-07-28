@@ -1,0 +1,952 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2024-06-27T21:45:14.933Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Who was Django Reinhardt?",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2024-06-28T06:56:11.294Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Who was Django Reinhardt?",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2024-06-29T23:46:27.909Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Who was Django Reinhardt?",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2024-06-30T00:24:16.418Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Mountain Michaelly",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2024-06-30T12:37:37.108Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Heroes (American TV series)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2024-06-30T12:41:18.656Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "What is a Computer?",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2024-07-01T17:56:04.023Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Comment by Chinemelu on Heroes (American TV series)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2024-07-01T17:56:04.204Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Comment by Chinemelu on Heroes (American TV series)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2024-07-01T17:56:37.432Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Comment by Chinemelu on Heroes (American TV series)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2024-07-01T17:56:37.697Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Comment by Chinemelu on Heroes (American TV series)",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2024-07-02T20:33:44.400Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Mountain Michaelly",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add post",
+    "content_type": 7,
+    "codename": "add_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change post",
+    "content_type": 7,
+    "codename": "change_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete post",
+    "content_type": 7,
+    "codename": "delete_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view post",
+    "content_type": 7,
+    "codename": "view_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add comment",
+    "content_type": 8,
+    "codename": "add_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change comment",
+    "content_type": 8,
+    "codename": "change_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete comment",
+    "content_type": 8,
+    "codename": "delete_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view comment",
+    "content_type": 8,
+    "codename": "view_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add tag",
+    "content_type": 9,
+    "codename": "add_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change tag",
+    "content_type": 9,
+    "codename": "change_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete tag",
+    "content_type": 9,
+    "codename": "delete_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view tag",
+    "content_type": 9,
+    "codename": "view_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add tagged item",
+    "content_type": 10,
+    "codename": "add_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change tagged item",
+    "content_type": 10,
+    "codename": "change_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete tagged item",
+    "content_type": 10,
+    "codename": "delete_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view tagged item",
+    "content_type": 10,
+    "codename": "view_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add site",
+    "content_type": 11,
+    "codename": "add_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change site",
+    "content_type": 11,
+    "codename": "change_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete site",
+    "content_type": 11,
+    "codename": "delete_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view site",
+    "content_type": 11,
+    "codename": "view_site"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$NyjJ74Kh4wTfKLVYvOJHHS$m4O+sLXNeM4t0tIqNIJ7TsJlta/QWXGe2F7WDm52hdM=",
+    "last_login": "2024-06-30T12:32:13.739Z",
+    "is_superuser": true,
+    "username": "nemelu",
+    "first_name": "",
+    "last_name": "",
+    "email": "nemelu@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2024-06-27T21:40:08.552Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "blog",
+    "model": "post"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "blog",
+    "model": "comment"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "taggit",
+    "model": "tag"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "taggit",
+    "model": "taggeditem"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "sites",
+    "model": "site"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "2hvzua7v25oe0vg5nymkh2kvrlkrqgwh",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAURP-FtSHQy9Ole7-BwOVWqgaS0q6M_64kXehy5pyZFwtx30rYO61hyezMJDv9dinig-oA-R7rrXFsdVuXxIfCD9r5tWV6Xg7376DEXsaavEZEoaTB5LOENIMDK6XRE_g5CiHATpHAKivAWaMlGOctGfomr9j7A8t5NmI:1sNtj3:mCQCNQ9baBmgcQB9TpINMl6mVAz_tAboU5WqgdEpLKM",
+    "expire_date": "2024-07-14T12:32:13.849Z"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 1,
+  "fields": {
+    "title": "Who was Django Reinhardt?",
+    "slug": "who-was-django-reinhardt",
+    "author": 1,
+    "body": "Am about to add some good text",
+    "publish": "2024-06-27T21:41:46Z",
+    "created": "2024-06-27T21:45:14.913Z",
+    "updated": "2024-06-29T23:46:27.872Z",
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 2,
+  "fields": {
+    "title": "Mountain Michaelly",
+    "slug": "mountain-michaelly",
+    "author": 1,
+    "body": "Some biography about mountain  Michaelly!",
+    "publish": "2024-06-30T00:23:40Z",
+    "created": "2024-06-30T00:24:16.409Z",
+    "updated": "2024-07-02T20:33:44.335Z",
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 3,
+  "fields": {
+    "title": "Heroes (American TV series)",
+    "slug": "heroes-american-tv-series",
+    "author": 1,
+    "body": "This article is about the American TV series Heroes. For other uses of \"Heroes\", see Heroes (disambiguation).\r\nHeroes\r\n\r\nGenre\t\r\nSuperhero\r\nDrama\r\nCreated by\tTim Kring\r\nStarring\t\r\nHayden Panettiere\r\nSantiago Cabrera\r\nJack Coleman\r\nTawny Cypress\r\nNoah Gray-Cabey\r\nGreg Grunberg\r\nAli Larter\r\nMasi Oka\r\nAdrian Pasdar\r\nSendhil Ramamurthy\r\nLeonard Roberts\r\nMilo Ventimiglia\r\nDavid Anders\r\nKristen Bell\r\nDana Davis\r\nJames Kyson Lee\r\nZachary Quinto\r\nDania Ramirez\r\nCristine Rose\r\nRobert Knepper\r\nComposers\t\r\nWendy Melvoin\r\nLisa Coleman\r\nCountry of origin\tUnited States\r\nOriginal language\tEnglish\r\nNo. of seasons\t4\r\nNo. of episodes\t77 (list of episodes)\r\nProduction\r\nExecutive producers\t\r\nTim Kring\r\nDennis Hammer\r\nAllan Arkush\r\nGreg Beeman\r\nMatt Shakman\r\nPeter Elkoff\r\nJames Middleton\r\nProducers\t\r\nLori Moyter\r\nKevin Lafferty\r\nProduction locations\t\r\nLos Angeles, California\r\nOntario, Canada\r\nCinematography\t\r\nNate Goodman\r\nCharlie Lieberman\r\nEdward J. Pei\r\nAnnette Haellmigk\r\nAlan Caso\r\nEditors\t\r\nLori Motyer\r\nMike Ketelsen\r\nMichael S. Murphy\r\nDonn Aron\r\nScott Boyd\r\nKristopher Lease\r\nLouis Cioffi\r\nMartin Nicholson\r\nTom Costantino\r\nCamera setup\tSingle-camera\r\nRunning time\t42 minutes\r\nProduction companies\t\r\nTailwind Productions\r\nNBC Universal Television Studio (2006–07)\r\nUniversal Media Studios (2007–10)\r\nOriginal release\r\nNetwork\tNBC\r\nRelease\tSeptember 25, 2006 –\r\nFebruary 8, 2010\r\nRelated\r\nHeroes Reborn\r\nHeroes is an American superhero drama television series created by Tim Kring that aired on NBC for four seasons from September 25, 2006, to February 8, 2010. The series tells the stories of ordinary people who discover that they have superhuman abilities and how these abilities take effect in the characters' lives as they work together to prevent catastrophic futures. The series emulates the aesthetic style and storytelling of American comic books, using multi-episode story arcs that build upon a larger, more encompassing narrative.[1] It was produced by Tailwind Productions in association with Universal Media Studios.[2] It was filmed primarily in Los Angeles, California.[3]",
+    "publish": "2024-06-30T12:35:14Z",
+    "created": "2024-06-30T12:37:37.092Z",
+    "updated": "2024-06-30T12:37:37.093Z",
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 4,
+  "fields": {
+    "title": "What is a Computer?",
+    "slug": "what-is-a-computer",
+    "author": 1,
+    "body": "A computer is an electronic device that processes data according to instructions that are provided by computer programs. Computers can be used to perform a wide range of tasks, from basic calculations to complex operations involving artificial intelligence (AI).\r\n\r\nAdvertisements\r\nA computer has two main parts: hardware and software. The hardware is responsible for executing tasks, and the software provides the hardware with directions for what tasks to perform – and how to perform them.",
+    "publish": "2024-06-30T12:40:16Z",
+    "created": "2024-06-30T12:41:18.645Z",
+    "updated": "2024-06-30T12:41:18.645Z",
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 1,
+  "fields": {
+    "post": 3,
+    "name": "Chinemelu",
+    "email": "chinemelu@gmail.com",
+    "body": "This is what I've been looking for all this while",
+    "created": "2024-07-01T17:56:04.006Z",
+    "updated": "2024-07-01T17:56:04.006Z",
+    "active": true
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 2,
+  "fields": {
+    "post": 3,
+    "name": "Chinemelu",
+    "email": "chinemelu@gmail.com",
+    "body": "This is what I've been looking for all this while for some reasons",
+    "created": "2024-07-01T17:56:04.194Z",
+    "updated": "2024-07-01T17:56:37.678Z",
+    "active": true
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 3,
+  "fields": {
+    "post": 3,
+    "name": "Adaugu",
+    "email": "ada@gmail.com",
+    "body": "That's good to read",
+    "created": "2024-07-01T22:04:49.463Z",
+    "updated": "2024-07-01T22:04:49.463Z",
+    "active": true
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 4,
+  "fields": {
+    "post": 4,
+    "name": "Ujunwa",
+    "email": "uche@gmail.com",
+    "body": "This really helped me in my project writing",
+    "created": "2024-07-01T22:26:53.939Z",
+    "updated": "2024-07-01T22:26:53.939Z",
+    "active": true
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 5,
+  "fields": {
+    "post": 4,
+    "name": "Ujunwa",
+    "email": "uche@gmail.com",
+    "body": "This really helped me in my project writing",
+    "created": "2024-07-01T22:28:39.840Z",
+    "updated": "2024-07-01T22:28:39.841Z",
+    "active": true
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 6,
+  "fields": {
+    "post": 4,
+    "name": "Ujunwa",
+    "email": "uche@gmail.com",
+    "body": "This really helped me in my project writing",
+    "created": "2024-07-01T22:28:51.693Z",
+    "updated": "2024-07-01T22:28:51.693Z",
+    "active": true
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 7,
+  "fields": {
+    "post": 4,
+    "name": "Ujunwa",
+    "email": "uche@gmail.com",
+    "body": "This really helped me in my project writing",
+    "created": "2024-07-01T22:29:10.851Z",
+    "updated": "2024-07-01T22:29:10.851Z",
+    "active": true
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 8,
+  "fields": {
+    "post": 4,
+    "name": "Ujunwa",
+    "email": "uche@gmail.com",
+    "body": "This really helped me in my project writing",
+    "created": "2024-07-01T22:29:31.814Z",
+    "updated": "2024-07-01T22:29:31.814Z",
+    "active": true
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 9,
+  "fields": {
+    "post": 4,
+    "name": "Ujunwa",
+    "email": "uche@gmail.com",
+    "body": "This really helped me in my project writing",
+    "created": "2024-07-01T22:29:55.851Z",
+    "updated": "2024-07-01T22:29:55.851Z",
+    "active": true
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 10,
+  "fields": {
+    "post": 1,
+    "name": "Ijeoma",
+    "email": "igbo4biafra@gmail.com",
+    "body": "Thank you for this writing",
+    "created": "2024-07-01T22:32:24.395Z",
+    "updated": "2024-07-01T22:32:24.395Z",
+    "active": true
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 11,
+  "fields": {
+    "post": 1,
+    "name": "Ijeoma",
+    "email": "igbo4biafra@gmail.com",
+    "body": "Thank you for this writing",
+    "created": "2024-07-01T22:32:24.716Z",
+    "updated": "2024-07-01T22:32:24.716Z",
+    "active": true
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 12,
+  "fields": {
+    "post": 1,
+    "name": "Ijeoma",
+    "email": "igbo4biafra@gmail.com",
+    "body": "Thank you for this writing",
+    "created": "2024-07-01T22:32:24.824Z",
+    "updated": "2024-07-01T22:32:24.824Z",
+    "active": true
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 13,
+  "fields": {
+    "post": 2,
+    "name": "Michel",
+    "email": "mountainmikely@gmail.com",
+    "body": "Do you want my biography",
+    "created": "2024-07-01T22:36:52.846Z",
+    "updated": "2024-07-01T22:36:52.846Z",
+    "active": true
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 14,
+  "fields": {
+    "post": 2,
+    "name": "Chinemelu",
+    "email": "mountainmikely@gmail.com",
+    "body": "I came accross this post at the right time",
+    "created": "2024-07-01T22:37:41.273Z",
+    "updated": "2024-07-01T22:37:41.273Z",
+    "active": true
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 1,
+  "fields": {
+    "name": "music",
+    "slug": "music"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 2,
+  "fields": {
+    "name": "django",
+    "slug": "django"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 3,
+  "fields": {
+    "name": "news",
+    "slug": "news"
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 2,
+  "fields": {
+    "tag": 2,
+    "content_type": 7,
+    "object_id": 1
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 3,
+  "fields": {
+    "tag": 3,
+    "content_type": 7,
+    "object_id": 1
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 4,
+  "fields": {
+    "tag": 2,
+    "content_type": 7,
+    "object_id": 2
+  }
+},
+{
+  "model": "sites.site",
+  "pk": 1,
+  "fields": {
+    "domain": "example.com",
+    "name": "example.com"
+  }
+}
+]
