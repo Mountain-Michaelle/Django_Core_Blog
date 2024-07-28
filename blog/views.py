@@ -122,14 +122,14 @@ def post_search(request):
         if search_form.is_valid():
             query = search_form.cleaned_data['query']
             search_vector =  SearchVector('title', weight='A') + SearchVector('body', weight='B') 
-            search_query = SearchQuery(query, config='spanish')
-            
+            search_query = SearchQuery(query)
+            results = Post.published.annotate(search=search_vector, rank=SearchRank(search_vector, search_query)).filter(rank__gte=0.3).order_by('-rank')
+
             # results = Post.published.annotate(similarity=TrigramSimilarity('title', query),
             #                                 ).filter(similarity__gt=0.1).order_by('-similarity')\
-            results = Post.published.annotate(search=search_vector, rank=SearchRank(search_vector, search_query)).filter(rank__gt=0.3).order_by('-rank')
+                
     context = {'search_form':search_form, 'query':query, 'results':results}
     return render(request, 'blog/post/blog_search.html', context)
-
 
 # class PostListView(ListView):
 #     queryset = Post.published.all()
