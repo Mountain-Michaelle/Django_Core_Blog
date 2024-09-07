@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 import os
+from decouple import config
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -20,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-+vd%9_$nbyyjf$omf*z*^xbu59im=*s8+o)azw9bn#cprambn4'
+SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -46,6 +47,7 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'django.contrib.sitemaps',
     'django.contrib.postgres',
+    'django_summernote',
 ]
 
 MIDDLEWARE = [
@@ -91,12 +93,24 @@ WSGI_APPLICATION = 'nfcs_site.wsgi.application'
 #     }
 # }
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'blog',
+#         'USER': 'blog',
+#         'PASSWORD': '777777ooO',
+#     }
+# }
+
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'blog',
-        'USER': 'blog',
-        'PASSWORD': '777777ooO',
+        'NAME': config('DB_NAME'),
+        'USER': config('DB_USER'),
+        'PASSWORD': config('DB_PASSWORD'),
+        'HOST': config('DB_HOST'),
+        'PORT': config('DB_PORT')
     }
 }
 # Email Server configurations
@@ -151,8 +165,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS=[BASE_DIR/'static']
-STATIC_ROOT = '/static/'
+
+STATICFILES_DIRS=[BASE_DIR/'static/']
+
+STATIC_ROOT = BASE_DIR / 'staticfiles/'
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
@@ -186,6 +202,7 @@ COMPRESS_PRECOMPILERS = (
     ('text/x-scss', 'django_libsass.SassCompiler'),
 )
 
+OFFLINE_COMPILE = True
 
 INTERNAL_IPS = [
     "127.0.0.1",
@@ -195,3 +212,7 @@ INTERNAL_IPS = [
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Summer note
+X_FRAME_OPTIONS = 'SAMEORIGIN'
+SUMMERNOTE_THEME = 'bs4'

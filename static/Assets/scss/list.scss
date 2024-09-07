@@ -21,35 +21,55 @@
         .card{
             display: flex;
             flex-direction: column;
+            position: relative;
 
-            a{
-                color: #49486a;
-                font-size: 1.5rem;
-                font-weight: 600;
-                text-decoration: none;
-            }
+            .card-top{
+                .a_tit{
+                    font-size: 1.8rem;
+                    color: #167174;
+                    text-decoration: none;
+                    font-weight: 800;
 
-            i{
-                font-size: 1.1rem;
-                color: grey;
-            }
+                }
 
-            .tagged{
-                
-                a{
-                    font-size: 0.8rem;
-                    background: #747ea7;
-                    color: white;
-                    padding: 5px;
-                    margin-top: 0.3rem;
-                    border-radius: 8px;
-                    border: 1px solid #ff5800;
+                h1{
+                    span{
+                        display: flex;
+                        width: 100% !important;
+                        a{
+                             background: #00062b;
+                            border-radius: 8px;
+                            color: white;
+                            text-decoration: none;
+                            padding: 3px;
+                            font-size: 1rem;
+                            text-transform: capitalize; 
+                            margin: 0.3rem;
+                        }
+                        .tag_href{
+                            .a_href{
+                          
+                            }
+                        }
+                    }
                 }
             }
 
-            .blog-right{
-                margin-left: 2rem;
-                color: grey;
+            .tag_href{
+                display: flex;
+                width: 100% !important;
+
+                .a_href{
+                    background: #00062b;
+                    border-radius: 8px;
+                    color: white;
+                    text-decoration: none;
+                    padding: 3px;
+                    font-size: 1.1rem;
+                    margin: 0.3rem;
+                    text-transform: capitalize;
+                
+                }
             }
         }
     }
