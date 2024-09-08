@@ -39,8 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'sass_processor',
-    'compressor',
+    # 'sass_processor',
+    # 'compressor',
     'blog',
     'django_browser_reload',
     'taggit',
@@ -172,46 +172,57 @@ STATIC_ROOT = BASE_DIR / 'staticfiles/'
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-# STATICFILES_FINDERS = (
+
+# STATICFILES_FINDERS = [
 #     'django.contrib.staticfiles.finders.FileSystemFinder',
 #     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-#     # other finders..
+#      # other finders..
 #     'compressor.finders.CompressorFinder',
+#     'sass_processor.finders.CssFinder',
+# ]
+
+# SASS_PROCESSOR_INCLUDE_DIRS = [
+#     os.path.join(BASE_DIR, 'static/Assets/scss'),
+#     # os.path.join(PROJECT_PATH, 'node_modules'),
+# ]
+
+
+# SASS_PROCESSOR_INCLUDE_FILE_PATTERN = r'^.+\.scss$'
+
+
+# COMPRESS_PRECOMPILERS = (
+#     ('text/x-scss', 'django_libsass.SassCompiler'),
 # )
 
-STATICFILES_FINDERS = [
-    'django.contrib.staticfiles.finders.FileSystemFinder',
-    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-     # other finders..
-    'compressor.finders.CompressorFinder',
-    'sass_processor.finders.CssFinder',
-]
+# OFFLINE_COMPILE = True
+# COMPRESS_ENABLED = True
+# COMPRESS_OFFLINE = True
 
-SASS_PROCESSOR_INCLUDE_DIRS = [
-    os.path.join(BASE_DIR, 'static/Assets/scss'),
-    # os.path.join(PROJECT_PATH, 'node_modules'),
-]
+# SASS_PRECISION = 8
+
+# COMPRESS_ROOT = STATIC_ROOT
+
+# COMPRESS_OUTPUT_DIR = 'CACHE'
+
+# # CSS Compressor settings
+# COMPRESS_CSS_FILTERS = [
+#     'django_libsass.SassFilter',  # Compiles SCSS to CSS
+#     'compressor.filters.cssmin.CSSMinFilter',  # Minifies the CSS
+# ]
+
+# # New configurations
+# LIBSASS_OUTPUT_STYLE = 'compressed'
 
 
-SASS_PROCESSOR_INCLUDE_FILE_PATTERN = r'^.+\.scss$'
-
-SASS_OUTPUT_STYLE = 'compact'
-SASS_PRECISION = 8
-
-COMPRESS_PRECOMPILERS = (
-    ('text/x-scss', 'django_libsass.SassCompiler'),
-)
-
-OFFLINE_COMPILE = True
-
-INTERNAL_IPS = [
-    "127.0.0.1",
-]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+INTERNAL_IPS = [
+    "127.0.0.1",
+]
 
 # Summer note
 X_FRAME_OPTIONS = 'SAMEORIGIN'

@@ -1,7 +1,7 @@
 {% load blog_tags %} 
 {% load static %}
-{% load sass_tags %}
-{% load compress %}
+{% comment %} {% load sass_tags %}
+{% load compress %} {% endcomment %}
 
 
 <!DOCTYPE html>
@@ -9,7 +9,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="{% sass_src 'Assets/scss/main.scss' %}" rel="stylesheet" type="text/css" />
+    <link href="{% static 'Assets/css/main.css' %}" rel="stylesheet" type="text/css" />
+    {% comment %} {% compress css %}
+        <link href="{% static 'Assets/scss/main.scss' %}" rel="stylesheet" type="text/x-scss" />
+    {% endcompress %} {% endcomment %}
+
 
     {% block title %} {% endblock %}
     <title>nfcs-st-augustine-chaplaincy-imt</title>
