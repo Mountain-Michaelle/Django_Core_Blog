@@ -1,0 +1,57 @@
+.search_form{
+    display:flex;
+    width: 100%;
+    flex-direction: column;
+    flex:  2;
+  
+  form{
+    display: flex;
+    background: #262c4f;
+    padding: 15px 0 15px 0;
+    width: 100%;
+    margin: 0 auto;  
+    
+    div{
+        width: 80%;
+        background: white;
+    }
+    label{
+            display: none !important;
+        }
+
+        input{
+        width: 80%;
+        padding: 7px;
+        margin: 0 0 0 10px;
+        outline: none;
+        border: none;
+        background-image: url('../images/nav.png');
+        background-position: center;
+        background-size: cover;;
+    }
+
+    button{
+        padding: 7px;
+        border: none;
+        background: white;
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: grey;
+    }
+    } 
+    
+    .results{
+     h1, h2, h3, h4{
+        padding: 5px 10px 0 10px;
+     }
+
+     h1{
+        font-size: 1.5rem;
+        color: grey;
+        padding: 15px 0 0 10px;
+     }
+  }
+  }
+
+
+ 

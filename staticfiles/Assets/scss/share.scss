@@ -1,0 +1,80 @@
+
+.share{
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+
+
+    .sent{
+        display: flex;
+        flex-direction: column;
+        margin: 2rem auto;
+        gap: 2rem;
+        text-align: center;
+
+        h1{
+            color:#0dc20d;
+        }
+
+        p{
+            font-size: 1.1rem;
+            color: grey;
+        }
+    }
+
+    h2{
+        color: #7373a1;
+        padding: 1rem 0 1rem 0;
+        margin-left: 2rem;
+        font-size: 1.1rem;
+
+        strong{
+            color: grey;
+        }
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        justify-content: center;
+        margin: 0 auto;
+        width: 80%;
+        padding-bottom: 20px;
+        
+        textarea, input{
+            border: 1px solid #e7d4d4;
+            width: 100%;
+            padding: 8px;
+            background: #ebebf3;
+            outline: none;
+            
+        }
+
+        textarea{
+            height: 70px;
+            width: 100%;
+        }
+
+        ul li{
+            display: none
+        }
+        
+        .bttn{
+            display: flex;
+            justify-content: flex-end;
+
+            button{
+            width: 150px;
+            padding: 7px;
+            color: #575777;
+            font-weight: 700;
+            font-size: 1.1rem;
+            border: 1px solid #ebebf3; 
+            }  
+        }
+      
+    }
+
+
+}

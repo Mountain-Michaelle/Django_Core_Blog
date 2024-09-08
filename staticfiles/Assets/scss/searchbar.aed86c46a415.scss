@@ -1,0 +1,134 @@
+@import './responsive.scss';
+
+.search{
+    background: #6d7697;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+
+    .search-left{
+        flex: 2;
+
+        strong{
+            font-size: 1.7rem;
+            font-weight: 700;
+            color: #cec7e7;
+
+        }
+    }
+
+    .search-right{
+        flex: 3;
+        display: flex;
+        justify-content: flex-end;
+
+        p{
+            font-weight: 800;
+            color: white;
+
+            a{
+                color: #22c4ff;
+                padding: 2px;
+                text-decoration: none;
+                font-weight: 700;
+                font-size: 1.2rem;
+            }
+        }
+
+        .search-input{
+            background: white;
+            padding: 5px;
+            width: 100%;
+            max-width: 400px;
+            flex: 3;
+            border-radius: 4px;
+            position: relative;
+            align-items: center;
+            justify-content: flex-end;
+            overflow: hidden;
+
+            input{
+                border: none;
+                outline: none;
+                padding: 3px;
+                width: 95%;
+            }
+
+            .search-btn{
+                position: absolute;
+                right: 0;
+                background-color: white;
+                padding: 3px;
+                border: none;
+                width: 70px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    @include small{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 5px;
+
+        .search-right{
+            width: 100%;
+            justify-content: flex-start !important;
+            transition: all 0.5s ease;
+
+            .search-input{
+                width: 100%;
+                justify-content: center;
+                flex-direction: column;
+                position: relative;
+                margin: 20px 0 20px 0;
+                max-width: 100%;
+
+                input{
+                    width: 80%;
+                    
+                }
+            }
+        }
+
+        .search-left{
+            width: 100%;
+            
+            strong{
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    @include large{
+        
+        .search-right{
+            width: 100%;
+            justify-content: flex-end;
+            transition: all 0.5s ease;
+
+            .search-input{
+                width: 100%;
+                justify-content: center;
+                flex-direction: column;
+                position: relative;
+                margin: 20px 0 20px 0;
+                max-width: 100%;
+
+                input{
+                    width: 80%;
+                    
+                }
+            }
+        }
+
+        .search-left{
+            width: 100%;
+            
+            strong{
+                font-size: 1.2rem;
+            }
+        }
+
+    }
+}
