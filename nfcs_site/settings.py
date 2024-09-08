@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     # 'sass_processor',
     # 'compressor',
     'blog',
-    'django_browser_reload',
+    #'django_browser_reload',
     'taggit',
     'django.contrib.sites',
     'django.contrib.sitemaps',
@@ -220,9 +220,9 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-INTERNAL_IPS = [
-    "127.0.0.1",
-]
+# INTERNAL_IPS = [
+#     "127.0.0.1",
+# ]
 
 # Summer note
 X_FRAME_OPTIONS = 'SAMEORIGIN'
